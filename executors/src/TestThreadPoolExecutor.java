@@ -12,8 +12,8 @@ public class TestThreadPoolExecutor {
     public static void main(String[] args)
     {
         BlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>(6);
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 6, 1, TimeUnit.SECONDS, queue);
-
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 6, 60, TimeUnit.SECONDS, queue);
+                                                                   // keepailvetime  为心创建的大于corethreadnum 的那部分线程最大的空闲时间 就会被回收了
         for (int i = 0; i < 20; i++)
         {
             final int index = i;
