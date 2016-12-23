@@ -1,0 +1,238 @@
+2.5.0
+1. 修复了在实体类转Pojo类导致的类型转换错误
+2. 将parse方法从ClassUtil迁移到Conver类中。
+3. 修复包装类转基本类型的关于Integer的一个bug
+
+2.6.0:
+1. 增加SqlBuilder
+2. 增加HttpUtil.request方法
+
+2.6.1
+SecureUtil中的base64EncodeTable改为私有
+
+2.6.2
+丰富ReUtil方法
+增加Func类提供一些常用函数（equals或者length）
+
+----------------------------------------------------------------------
+
+2.7.0
+1. 增加缓存（com.xiaoleilu.hutool.cache）
+2. 增加Validator验证器，用于表单验证
+
+2.7.1
+1. StrUtil增加 nullToEmpty和emptyToNull方法
+2. StrUtil的convertCharset迁移到Conver类中
+3. StrUtil增加 padPre 和 padEnd
+4. StrUtil的repeat方法提高性能
+
+2.7.2
+1. 去除无用依赖
+
+2.7.3
+1. SecureUtil中增加mac算法的加密
+
+2.7.4
+1. 增加针对byte的md5方法
+2.增加StrUtil.str(byte[])
+3. 修复SecureUtil中base64方法
+
+2.8.0
+1.增加HTTP模块
+2. 修复VelocityUtil空指针问题
+
+2.8.1
+1. 修复ClassUtil中报名前缀为空时扫描类失败的错误
+
+2.8.2
+1. 修复Strutil.hasBlank方法
+
+2.8.3
+1. 增加DaoTemplate
+2. 调整SqlExecutor、SqlConnRunner、SqlRunner三个类的功能区分，去除继承依赖
+
+2.8.4
+1. 修复DaoTemplate
+
+2.8.5
+1. 为VelocityUtil增加Session参数的读取
+
+2.8.6
+1. 修复VelocityUtil中Session参数的bug
+
+2.8.7
+1. DaoTemplate增加addOrUpdate方法
+2. SqlBuilder增加IN，修复WHERE条件为空时WHERE关键字丢失问题
+
+2.9.0
+1. 为Velocity添加全局上下文功能
+
+2.9.1
+1. 修复db的SqlBuilder中where语句为空导致语法错误
+
+2.9.2
+1. 优化Singleton类，轻量化同步
+
+2.9.3
+1. 优化代码格局
+
+2.9.4
+1. 增加HandleHelper.HandleRow方法，只接受一个ResultSet对象
+
+2.9.5
+1. 修复ClassPath带空格和中文导致的Class文件找不到
+
+2.9.6
+1. 更新依赖的包版本为最新
+
+2.9.7
+1. 修复Oracle的SQL语句中反引号导致的错误
+2. 修复空Where语句导致的表名找不到引起的空指针问题（优化错误提示）
+
+2.9.8
+1. 修复DaoTemplate中add和update方法默认获取不到当前表名的问题
+2. 修复Entity的fillVo方法返回对象错误问题
+
+2.9.9
+1. StrUtil.encode和byte方法重了，并修改方法内容，使charset为空时使用平台相关字符集
+2. HttpUtil中获得客户端IP地址处理多级反向代理
+
+2.9.10
+1.修复Oracle无自增主键insert报错问题
+
+2.10.0
+1. 扩展insert方法，使之返回插入行数、主键、Long型自增主键并存
+
+2.10.1
+1. 扩展DaoTemplate方法
+
+2.11.0
+1. FileUtil中增加normalizePath方法
+2. 增加ZipUtil
+
+2.11.1
+1. 修改XmlUtil
+
+2.11.2
+1. 增加getAbsolutePath方法
+2. 增加URLUtil.getPath方法
+
+2.11.3
+1. 修改InjectUtil，支持忽略大小写
+
+2.11.4
+Entity中toVo区别是否忽略大小写
+
+2.11.5
+1、修复HTTP模块中空参数导致的空指针问题
+
+2.11.6
+1、修复LogWraper的问题
+2、修复isURL验证错误问题
+
+2.12.0
+1、FileUtil增加递归获取文件目录的方法
+2、增加JarClassLoader类，用于加载外部Jar文件
+
+2.12.1
+1、修复Oracle引号包围和nextval的大小写问题
+2、Entity加入字段限制机制
+3、增加一些日期方法
+4、修复空组GroupedSet的bug
+5、增加FileUtil从文件中读取字符串和行
+
+2.12.2
+1、Setting继承于BasicSetting，并改用HashTable防止并发问题
+2、在Entity中增加clone方法和toString()方法
+3、DbUtil中增加方法，用于将表字段加入到Entity，限制Entity内容范围
+4、增加CronUtil的一些管理方法，暴露Scheduler对象给用户
+5、丰富DaoTemplate方法
+6、Conver.toXXX转换为数字的方法加入trim
+7、增加EntitySetHandler，用于返回唯一性的结果集
+
+2.12.3
+1、修复InjectUtil中toMap方法返回getClass的问题
+
+2.12.4
+1、db增加分页，会根据总结果数计算分页的各种参数
+2、LogWrapper增加只有一个Throwable参数的日志方法
+3、SqlExecutor增加call方法
+4、Entity类型的Where参数支持表达式
+5、增加计算文件MD5方法（SecureUtil.md5）
+6、ClassUtil增加invoke方法，用于动态执行指定对象或类的方法
+7、修复Http编码空指针问题
+8、修复newArrayList的大坑！
+
+2.13.0
+1、强化Log模块，无配置下支持多日志框架
+
+2.13.1
+1、FileUtil增加方法判断目录是否为空
+2、SecureUtil增加simpleUUID方法
+3、修复Map转对象的时候忽略大小写问题（InjectUtil.injectFromMap）
+4、修复LogFactory.get()栈溢出问题
+5、增加downloadFile方法 for HttpUtil
+6、扩充ZipUtil
+7、增加数据库连接池
+8、修复Http的form多类型问题
+9、修复IoUtil.copy未flush的bug
+10、Http增加文件上传
+
+2.13.2
+1、FileUtil中加入flush
+2、修复FileUtil的touch方法创建父目录空指针问题
+3、getClob Method
+4、增加转换为大写方法
+5、完善SystemUtil，并集中于system包中
+6、Http模块加入gzip支持
+7、解决IoUtil读取文本的问题
+
+2.14.0
+1、明确分类
+2、加入filter
+3、修复Crontab restart不能加载配置文件的bug
+4、扩充StrUtil
+5、Add HTMLFilter
+6、修改getLog为get
+7、增加一些工具方法
+8、增加BeanUtil
+9、增加ConsoleLog
+10、CharsetUtil调整
+11、调整BloomFilter API
+12、增加SettingDruidDatasource
+13、修复Conver
+14、对Https验证增加自定义方法
+15、抽象不同类型对象的getter方法
+
+2.15.0
+1、修复SqlBuilder中 Order不支持多字段多向排序问题
+2、增加ResourceUtil
+3、对Conver做调整
+4、对Getter增加类型
+5、修改JSON部分，抽象JSON接口
+6、正则工具类中增加空值判断
+7、规范Close函数，删除FileUtil.close()，统一使用IoUtil.close()
+8、修补JSON模块
+9、规范FileUtil中的方法名，添加utf-8默认读写方法
+10、StrUtil增加str方法，讲Object转为String
+11、修复Setting中循环引用问题
+12、修改Setting store方法
+13、增加Assert类
+14、增加Bean属性拷贝
+
+2.15.1
+1、对Setting parse 的null不打印日志
+2、对对象克隆做了强化，修复无法反射调用父类方法的问题
+3、FileUtil中某些方法返回File对象，方便操作
+4、对Db中的方法做修正
+5、修复FileUtil.loopFiles方法过滤条件为空时全部过滤问题
+6、增加startWith和endWith方法
+2.15.2
+1、IoUtil.copy返回值使用long，防止溢出
+2、增加Console类
+3、修复Http上传问题
+2.15.3
+1、修复Http编码问题
+2、StrUtil增加containsIgnoreCase方法
+3、修复Entity的限制字段bug
+4、修复使用HttpResponse读取二进制流转码问题
