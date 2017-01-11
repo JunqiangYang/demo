@@ -1,0 +1,18 @@
+/* Write your styles */
+.am-nav > li + li {
+    margin-top: 0;
+}
+
+.am-nav .admin-sidebar-sub > li > a:focus,
+.am-nav .admin-sidebar-sub > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.am-nav .admin-sidebar-sub > li.am-active > a,
+.am-nav .admin-sidebar-sub > li.am-active > a:focus,
+.am-nav .admin-sidebar-sub > li.am-active > a:hover {
+    color: #fff;
+    background-color: #0e90d2;
+    cursor: default;
+}
