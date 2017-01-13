@@ -1,0 +1,11 @@
+
+
+entitySql=select * from (select ROWNUM No,DAVA_DOC.* from DAVA_DOC order by DAVA_DOC.ID) where No >(select t.No from (select ROWNUM No,DAVA_DOC.* from DAVA_DOC order by DAVA_DOC.ID) t where t.ID=?)
+nullSql=select * from DAVA_DOC
+
+
+
+indexFile=E:\\workspace2\\Test\\lucene_test\\poiIdext
+storeIdFile=E:\\workspace2\\Test\\lucene_test\\storeId.txt
+entityClassPath=index.IndexResult
+keyName=id
