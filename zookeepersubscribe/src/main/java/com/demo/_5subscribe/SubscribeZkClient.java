@@ -21,9 +21,8 @@ public class SubscribeZkClient {
 	private static final int CLIENT_QTY = 5;
 
 	/** Zookeeper服务器地址 */
-	private static final String ZOOKEEPER_SERVER = "192.168.10.5:2181";
-
-	/** 配置configs节点 */
+	private static final String ZOOKEEPER_SERVER = "127.0.0.1:2181";
+/** 配置configs节点 */
 	private static final String CONFIG_PATH = "/configs";
 	/** commands命名发送节点 */
 	private static final String COMMAND_PATH = "/commands";
