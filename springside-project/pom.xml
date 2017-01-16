@@ -47,9 +47,9 @@
         <url>https://github.com/springside/springside4/issues</url>
     </issueManagement>
 
-    <scm>
-        <url>https://github.com/springside/springside4</url>
-        <connection>scm:git:git://github.com/springside/springside4.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:springside/springside4.git</developerConnection>
-    </scm>
+    <!--<scm>-->
+        <!--<url>https://github.com/springside/springside4</url>-->
+        <!--<connection>scm:git:git://github.com/springside/springside4.git</connection>-->
+        <!--<developerConnection>scm:git:ssh://git@github.com:springside/springside4.git</developerConnection>-->
+    <!--</scm>-->
 </project>
