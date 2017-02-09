@@ -18,7 +18,7 @@ import org.I0Itec.zkclient.serialize.BytesPushThroughSerializer;
 public class SubscribeZkClient {
 
 	/** 客户端数量 */
-	private static final int CLIENT_QTY = 5;
+	private static final int CLIENT_QTY = 2;
 
 	/** Zookeeper服务器地址 */
 	private static final String ZOOKEEPER_SERVER = "127.0.0.1:2181";
@@ -63,7 +63,7 @@ public class SubscribeZkClient {
 
 			}
 			
-			Thread.sleep(500);
+			Thread.sleep(5000);
 			System.out.println("敲回车键退出！\n");
 			new BufferedReader(new InputStreamReader(System.in)).readLine();
 

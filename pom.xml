@@ -12,6 +12,8 @@
     <modules>
         <module>hutool</module>
         <module>spring_mongo</module>
+        <module>jmx_examples</module>
+        <module>redisdemo</module>
 
     </modules>
 
