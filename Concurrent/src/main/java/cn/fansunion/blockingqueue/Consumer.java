@@ -12,6 +12,7 @@ public class Consumer implements Runnable {
 	public Consumer(BlockingQueue<Food> queue, ExecutorService exec) {
 		this.queue = queue;
 		this.exec = exec;
+		//---------------
 	}
 
 	@Override
