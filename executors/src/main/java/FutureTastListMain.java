@@ -176,7 +176,6 @@ public class FutureTastListMain {
             final String task = "task@ " + (i + 1);
             System.out.println("put " + task);
             keyList.add(exec.addDBTask(new Callable<String>() {
-                @Override
                 public String call() throws Exception {
                     Thread.sleep(10000);
                     return task;
