@@ -23,6 +23,7 @@
         <module>spring_mongo</module>
         <module>zookeepersubscribe</module>
         <module>startup</module>
+        <module>yamldemo</module>
 
     </modules>
 
