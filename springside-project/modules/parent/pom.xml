@@ -34,7 +34,7 @@
 		<guava.version>14.0.1</guava.version>
 		<joda-time.version>2.2</joda-time.version>
 		<dozer.version>5.4.0</dozer.version>
-		<httpclient.version>4.2.5</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		<freemarker.version>2.3.20</freemarker.version>
 		<junit.version>4.11</junit.version>
 		<mockito.version>1.9.5</mockito.version>
