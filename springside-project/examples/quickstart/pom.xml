@@ -20,7 +20,7 @@
 		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
 		<jackson.version>2.1.5</jackson.version>
 		<slf4j.version>1.7.5</slf4j.version>
-		<logback.version>1.0.13</logback.version>
+		<logback.version>1.2.0</logback.version>
 		<commons-lang3.version>3.1</commons-lang3.version>
 		<guava.version>14.0.1</guava.version>
 		<junit.version>4.11</junit.version>
