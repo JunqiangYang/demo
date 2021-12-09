@@ -49,7 +49,7 @@
         <commons-io.version>2.4</commons-io.version>
 
         <joda-time.version>2.8</joda-time.version>
-        <jackson.version>2.5.1</jackson.version>
+        <jackson.version>2.9.10.8</jackson.version>
         <quartz.version>2.1.1</quartz.version>
         <dom4j.version>1.6.1</dom4j.version>
 
