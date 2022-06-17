@@ -42,7 +42,7 @@
 
         <com101tec.zkclient.version>0.9</com101tec.zkclient.version>
         <apache.cruator.version>2.8.0</apache.cruator.version>
-        <alibaba.fastjson.version>1.2.6</alibaba.fastjson.version>
+        <alibaba.fastjson.version>1.2.83</alibaba.fastjson.version>
         <io.netty.version>5.0.0.Alpha2</io.netty.version>
 
         <junit.version>4.11</junit.version>
