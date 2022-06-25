@@ -33,7 +33,7 @@
 
 
         <org.springframework.version>4.0.9.RELEASE</org.springframework.version>
-        <org.springframework.data.spring-data.mondb>1.9.6.RELEASE</org.springframework.data.spring-data.mondb>
+        <org.springframework.data.spring-data.mondb>3.3.5</org.springframework.data.spring-data.mondb>
         <org.springframework.test.version>4.0.9.RELEASE</org.springframework.test.version>
 
         <mongodb.driver>3.4.1</mongodb.driver>
