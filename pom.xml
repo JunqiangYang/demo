@@ -38,7 +38,7 @@
 
         <mongodb.driver>3.4.1</mongodb.driver>
         <common-loging>1.2</common-loging>
-        <apache.zookeeper.version>3.4.6</apache.zookeeper.version>
+        <apache.zookeeper.version>3.4.14</apache.zookeeper.version>
 
         <com101tec.zkclient.version>0.9</com101tec.zkclient.version>
         <apache.cruator.version>2.8.0</apache.cruator.version>
